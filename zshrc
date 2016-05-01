@@ -45,3 +45,5 @@ _load_settings "$HOME/.zsh/configs"
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 [[ -f ~/.profile ]] && source ~/.profile
+
+[ -s "/home/hustlion/.dnx/dnvm/dnvm.sh" ] && . "/home/hustlion/.dnx/dnvm/dnvm.sh" # Load dnvm
