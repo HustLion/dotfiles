@@ -1,7 +1,7 @@
-if &compatible
-  set nocompatible
-end
-
+" if &compatible
+"   set nocompatible
+" end
+"
 " Shim command and function to allow migration from Vundle to vim-plug.
 function! VundleToPlug(vundle_command, arg, ...)
   echom "You are using Vundle's `".a:vundle_command."` command to declare plugins. Dotfiles now uses vim-plug for plugin management. Please rename uses of `".a:vundle_command."` to `Plug`. Plugin was '".a:arg."'."
@@ -46,7 +46,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
-Plug 'vim-scripts/tComment'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
